@@ -59,7 +59,7 @@
     .about {
       background-color: #faf7ff;
     }
-    .about h2, .team h2, .stats h2 {
+    .about h2, .team h2, .stats h2, .risks h2 {
       color: #6a0dad;
       font-size: 2.2em;
       margin-bottom: 20px;
@@ -83,6 +83,32 @@
     .contact {
       background-color: #f6effd;
     }
+    .business-card {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .business-card img {
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    .prototype-3d {
+      margin-top: 40px;
+      height: 500px;
+    }
+    .risks {
+      background-color: #fff4f4;
+      padding: 60px 20px;
+      text-align: left;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .risks ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
     footer {
       background-color: #6a0dad;
       color: white;
@@ -102,13 +128,16 @@
     <a href="#about">About</a>
     <a href="#stats">Stats</a>
     <a href="#team">Team</a>
+    <a href="#risks">Risks</a>
     <a href="#contact">Contact</a>
+    <a href="#business-card">Business Card</a>
   </nav>
 
   <section id="hero" class="hero">
     <h1>Say Goodbye to Migraines</h1>
     <p>NeuroBand is a revolutionary wearable designed to alleviate migraines through advanced neural stimulation technology. Comfortable, effective, and easy to use—NeuroBand gives you control over your pain.</p>
     <img src="prototype.png" alt="NeuroBand Prototype" class="prototype-image" />
+    <iframe class="prototype-3d" src="3d-prototype.html" frameborder="0" width="100%"></iframe>
   </section>
 
   <section id="about" class="about">
@@ -136,7 +165,7 @@
         <strong>Skyler Field</strong><br>Lead Developer
       </div>
       <div class="member">
-        <strong>Marco Pimentel</strong><br>Graphic Designer
+        <strong>Marco Pimentel</strong><br>Co-founder
       </div>
       <div class="member">
         <strong>Tony Torres</strong><br>Marketing Manager
@@ -144,11 +173,27 @@
     </div>
   </section>
 
+  <section id="risks" class="risks">
+    <h2>Product Risks & Liability Disclaimer</h2>
+    <ul>
+      <li>NeuroBand is not intended to replace medical treatment or medication.</li>
+      <li>Do not use NeuroBand if you have a pacemaker or other implanted electrical devices.</li>
+      <li>Consult with a healthcare professional before using if you are pregnant or have a neurological condition.</li>
+      <li>Temporary discomfort or skin irritation may occur with prolonged use.</li>
+    </ul>
+    <p><strong>Disclaimer:</strong> NeuroBand Inc. is not liable for any adverse effects or misuse of the product. Users assume full responsibility when using NeuroBand. Always follow provided guidelines and consult medical professionals when in doubt.</p>
+  </section>
+
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Andrew Lopez, CEO<br>
     Phone: (323) 616-4873<br>
     Email: contact@neuroband.com</p>
+  </section>
+
+  <section id="business-card" class="business-card">
+    <h2>Business Card</h2>
+    <img src="business-card.png" alt="Business Card for Andrew Lopez" />
   </section>
 
   <footer>
