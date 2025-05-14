@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroBand</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+    header {
+      background-color: #6a0dad;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    .logo {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #542c85;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero {
+      background-color: #f4f0fa;
+    }
+    .hero h1 {
+      color: #6a0dad;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .prototype-image {
+      margin-top: 40px;
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #6a0dad;
+      border-radius: 12px;
+    }
+    .about {
+      background-color: #faf7ff;
+    }
+    .about h2, .team h2, .stats h2, .materials h2, .disclaimer h2 {
+      color: #6a0dad;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .member {
+      background-color: #f4f0fa;
+      border: 1px solid #d4c2eb;
+      border-radius: 10px;
+      padding: 15px;
+      width: 220px;
+    }
+    .stats {
+      background-color: #eae2f8;
+    }
+    .contact {
+      background-color: #f6effd;
+    }
+    .business-card {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .business-card img {
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    .prototype-3d {
+      margin-top: 40px;
+      height: 500px;
+    }
+    footer {
+      background-color: #6a0dad;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="NeuroBand Logo" class="logo" />
+    <h1>NeuroBand</h1>
+    <p>Relief Starts Here</p>
+  </header>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#stats">Stats</a>
+    <a href="#team">Team</a>
+    <a href="#materials">Materials & Technology</a>
+    <a href="#disclaimer">Disclaimer</a>
+    <a href="#contact">Contact</a>
+    <a href="#business-card">Business Card</a>
+  </nav>
+
+  <section id="hero" class="hero">
+    <h1>Say Goodbye to Migraines</h1>
+    <p>NeuroBand is a revolutionary wearable designed to alleviate migraines through advanced neural stimulation technology. Comfortable, effective, and easy to use—NeuroBand gives you control over your pain.</p>
+    <img src="prototype.png" alt="NeuroBand Prototype" class="prototype-image" />
+    <iframe class="prototype-3d" src="3d-prototype.html" frameborder="0" width="100%"></iframe>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About NeuroBand</h2>
+    <p>Backed by <strong>Mark Cuban</strong> from Shark Tank, NeuroBand has revolutionized how people fight migraines. With cutting-edge technology and proven effectiveness, we’ve proudly sold <strong>1,750 units</strong> to date at $169.42 each, helping thousands find relief.</p>
+  </section>
+
+  <section id="stats" class="stats">
+    <h2>Sales & Support</h2>
+    <p><strong>1750+ Devices Sold</strong></p>
+    <p><strong>$169.42 USD</strong> per unit</p>
+    <p>Sponsored by: <strong>Mark Cuban</strong></p>
+  </section>
+
+  <section id="team" class="team">
+    <h2>Meet the Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <strong>Andrew Lopez</strong><br>CEO
+      </div>
+      <div class="member">
+        <strong>Joncarlos</strong><br>Co-founder
+      </div>
+      <div class="member">
+        <strong>Skyler Field</strong><br>Lead Developer
+      </div>
+      <div class="member">
+        <strong>Marco Pimentel</strong><br>Co-founder
+      </div>
+      <div class="member">
+        <strong>Tony Torres</strong><br>Marketing Manager
+      </div>
+    </div>
+  </section>
+
+  <section id="materials" class="materials">
+    <h2>Materials & Technology</h2>
+    <p><strong>Biometric Sensors:</strong> Detect heart rate, skin temperature, and EEG brain signals using conductive polymer sensors and micro-electrodes.</p>
+    <p><strong>EEG & Light/Sound Sensors:</strong> Measure brainwave activity and detect environmental triggers to respond with adaptive feedback.</p>
+    <p><strong>Rechargeable Battery & Controller:</strong> Long-lasting Li-ion power source integrated into the back module with smart control features.</p>
+    <p><strong>Materials:</strong> Made from medical-grade silicone, lightweight aluminum housing, flexible polymer circuits, and hypoallergenic ear clips.</p>
+  </section>
+
+  <section id="disclaimer" class="disclaimer">
+    <h2>Risks & Liability Disclaimer</h2>
+    <p>While NeuroBand is designed to provide non-invasive relief from migraine symptoms, it is not a medical device and is not intended to replace professional medical advice, diagnosis, or treatment. Individual results may vary.</p>
+    <p>Use of this product is at the user’s own risk. NeuroBand, its creators, and sponsors assume no liability for any outcomes resulting from product use. Consult your healthcare provider before use if you have any medical conditions.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Andrew Lopez, CEO<br>
+    Phone: (323) 616-4873<br>
+    Email: contact@neuroband.com</p>
+  </section>
+
+  <section id="business-card" class="business-card">
+    <h2>Business Card</h2>
+    <img src="business-card.png" alt="Business Card for Andrew Lopez" />
+  </section>
+
+  <footer>
+    &copy; 2025 NeuroBand. All rights reserved.
+  </footer>
+</body>
+</html>
