@@ -18,13 +18,26 @@
       text-align: center;
     }
     .logo {
-      max-width: 100px;
+      max-width: 120px;
       margin-bottom: 10px;
+    }
+    nav {
+      background-color: #542c85;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
     }
     .hero {
       background-color: #f4f0fa;
-      padding: 60px 20px;
-      text-align: center;
     }
     .hero h1 {
       color: #6a0dad;
@@ -33,27 +46,42 @@
     }
     .hero p {
       font-size: 1.2em;
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto;
     }
     .prototype-image {
       margin-top: 40px;
-      max-width: 80%;
+      max-width: 90%;
       height: auto;
       border: 2px solid #6a0dad;
+      border-radius: 12px;
+    }
+    .about {
+      background-color: #faf7ff;
+    }
+    .about h2, .team h2, .stats h2 {
+      color: #6a0dad;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .member {
+      background-color: #f4f0fa;
+      border: 1px solid #d4c2eb;
       border-radius: 10px;
+      padding: 15px;
+      width: 220px;
+    }
+    .stats {
+      background-color: #eae2f8;
     }
     .contact {
-      background-color: #eae2f8;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .contact h2 {
-      color: #6a0dad;
-      margin-bottom: 10px;
-    }
-    .contact p {
-      font-size: 1.1em;
+      background-color: #f6effd;
     }
     footer {
       background-color: #6a0dad;
@@ -69,17 +97,60 @@
     <h1>NeuroBand</h1>
     <p>Relief Starts Here</p>
   </header>
-  <section class="hero">
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#stats">Stats</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="hero" class="hero">
     <h1>Say Goodbye to Migraines</h1>
     <p>NeuroBand is a revolutionary wearable designed to alleviate migraines through advanced neural stimulation technology. Comfortable, effective, and easy to use—NeuroBand gives you control over your pain.</p>
     <img src="prototype.png" alt="NeuroBand Prototype" class="prototype-image" />
   </section>
-  <section class="contact">
+
+  <section id="about" class="about">
+    <h2>About NeuroBand</h2>
+    <p>Backed by <strong>Mark Cuban</strong> from Shark Tank, NeuroBand has revolutionized how people fight migraines. With cutting-edge technology and proven effectiveness, we’ve proudly sold <strong>1,750 units</strong> to date at $169.42 each, helping thousands find relief.</p>
+  </section>
+
+  <section id="stats" class="stats">
+    <h2>Sales & Support</h2>
+    <p><strong>1750+ Devices Sold</strong></p>
+    <p><strong>$169.42 USD</strong> per unit</p>
+    <p>Sponsored by: <strong>Mark Cuban</strong></p>
+  </section>
+
+  <section id="team" class="team">
+    <h2>Meet the Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <strong>Andrew Lopez</strong><br>CEO
+      </div>
+      <div class="member">
+        <strong>Joncarlos</strong><br>Co-founder
+      </div>
+      <div class="member">
+        <strong>Skyler Field</strong><br>Lead Developer
+      </div>
+      <div class="member">
+        <strong>Marco Pimentel</strong><br>Graphic Designer
+      </div>
+      <div class="member">
+        <strong>Tony Torres</strong><br>Marketing Manager
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Andrew Lopez, CEO<br>
     Phone: (323) 616-4873<br>
     Email: contact@neuroband.com</p>
   </section>
+
   <footer>
     &copy; 2025 NeuroBand. All rights reserved.
   </footer>
